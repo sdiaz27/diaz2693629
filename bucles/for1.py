@@ -10,3 +10,5 @@ for k in range(0,11,2):
 for l in range(10,-1,-2):
     print(l)
     
+for i in range(1,11):
+    print (i**2)
