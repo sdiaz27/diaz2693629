@@ -1,5 +1,5 @@
 may=0
-man=100
+man=1000
 num=1
 cont=0
 sm=0
@@ -9,13 +9,12 @@ while num!=0:
     num=int(input('ingrese numero'))
     cont=cont+1 #cont+=1
     sm+=num
+    contnum=num
+    if  contnum<may:
+       may=contnum
+    if contnum>man and contnum!=0:
+       man=contnum
     pr=sm/cont
-contnum=num
-if  contnum<may:
-    may=contnum
-if contnum>man and contnum!=0:
-    man=contnum
-    
 
 
 print(f'El usuario ingreso {cont-1} numeros')
