@@ -73,7 +73,7 @@ def mediana (lista):
     return (data[index - 1] + data[index]) / 2
 
 
-def saber (lista, num):
+def buscar(lista, num):
     encontrado = False
     posiciones = []
     contador = 0
@@ -84,19 +84,16 @@ def saber (lista, num):
             posiciones.append(i)
             contador += 1
 
-    if encontrado:
-        print("El número", num, "fue encontrado.")
-        print("Se encontró en la(s) posición(es):", posiciones)
-        print("Se repite", contador, "veces.")
+    if encontrado == True:
+        return encontrado, posiciones, contador
     else:
-        print("El número", num, "no fue encontrado.")
-    return encontrado
+        return encontrado
         
 
     
     
 #imprimimos en la consola
-l1=llenarLista(tam,10)
+l1=llenarLista(tam,5)
 print(f'la lista es: {l1}')
 print(f'la suma de la lista es: {sumaLista(l1)}')
 print(f'el promedio de la lista es: {round(promedioLista(l1),2)}')
@@ -106,5 +103,5 @@ print(f'el orden de la lista acendente es: {ordenasendente(l1,tam)}')
 print(f'el orden de la lista decendente es: {desendente(l1,tam)}')
 print(f'la moda de la lista es: {moda(l1)}')
 print(f'la mediana de la lista es: {mediana(l1)}')
-print(f'{saber(l1,num)}')
+print(f'{buscar(l1,num)}')
 

@@ -1,8 +1,10 @@
+
+
 #damos nopmbre a una variable 
 i=1
 #damos nombre a la segunda variable 
 sum=0.
-#ponemos hwail y decimos que si la bariable i es menor o igual a 10   va arealisar la sieguente funcion 
+#ponemos while y decimos que si la bariable i es menor o igual a 10   va arealisar la sieguente funcion 
 while i<=10:
     #imprimimos en la consola l avariable i 
     print(i)
