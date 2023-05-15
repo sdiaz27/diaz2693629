@@ -1,9 +1,7 @@
 #importamos la carpeta de funciones random
 import random
-
-num=(input('escriba el numero a saber: '))
-tam=10
 #definimos la funcion (espesificamos tamañano y rango ) 
+tam=10
 def llenarLista(tam,rango):
 #creamos lista por comprencion 
     lista=[random.randrange(rango) for i in range(tam)]
@@ -85,16 +83,21 @@ def buscar(lista, num):
             contador += 1
 
     if encontrado == True:
-        return encontrado, posiciones, contador
+        #return encontrado, posiciones, contador
+        print(f'econtrado={encontrado}')
+        print(f'posiciones={posiciones}')
+        print(f'contador={contador}')
     else:
-        return encontrado
-        
+        #return encontrado
+        print('no encontrado...',encontrado)
 
     
     
 #imprimimos en la consola
 l1=llenarLista(tam,5)
 print(f'la lista es: {l1}')
+num=int((input('escriba el numero a saber: ')))
+
 print(f'la suma de la lista es: {sumaLista(l1)}')
 print(f'el promedio de la lista es: {round(promedioLista(l1),2)}')
 print(f'el numero mayor de la lista es: {mayor(l1)}')
@@ -103,5 +106,10 @@ print(f'el orden de la lista acendente es: {ordenasendente(l1,tam)}')
 print(f'el orden de la lista decendente es: {desendente(l1,tam)}')
 print(f'la moda de la lista es: {moda(l1)}')
 print(f'la mediana de la lista es: {mediana(l1)}')
-print(f'{buscar(l1,num)}')
+buscar(l1,num)
+# print(f'e={e}')
+# print(f'p={p}')
+# print(f'c={c}')
+
+
 
