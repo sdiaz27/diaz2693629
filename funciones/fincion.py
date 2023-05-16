@@ -1,11 +1,9 @@
-from networkx import maximal_independent_set
+
+import random
 
 
-def numero (x):
-    suma=0
-    n=1
-    while suma  < maximal_independent_set:
-        suma=+n
-        
+lista=[random.randrange(15,125) for i in range(1.50 , 2.00)]
+
+print(lista)
         
         
