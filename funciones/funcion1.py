@@ -37,7 +37,7 @@ def menor(lista):
 
 def ordenasendente (lista,tam):
     for i in range(len(lista)):
-     for j in range(i+1,tam):
+        for j in range(i+1,tam):
         if lista[i]>lista[j]:
             aux=lista[i]
             lista[i]=lista[j]
@@ -46,11 +46,11 @@ def ordenasendente (lista,tam):
 
 def desendente (lista,tam):
     for i in range(len(lista)):
-     for j in range(i+1,tam):
-        if lista[i]<lista[j]:
-            aux=lista[i]
-            lista[i]=lista[j]
-            lista[j]=aux
+        for j in range(i+1,tam):
+            if lista[i]<lista[j]:
+                aux=lista[i]
+                lista[i]=lista[j]
+                lista[j]=aux
     return lista
 
 def moda (lista):
@@ -83,21 +83,13 @@ def buscar(lista, num):
             contador += 1
 
     if encontrado == True:
-        #return encontrado, posiciones, contador
-        print(f'econtrado={encontrado}')
-        print(f'posiciones={posiciones}')
-        print(f'contador={contador}')
+    
+        return encontrado, posiciones, contador
     else:
-        #return encontrado
-        print('no encontrado...',encontrado)
-
-    
-    
-#imprimimos en la consola
+        return encontrado
 l1=llenarLista(tam,5)
 print(f'la lista es: {l1}')
 num=int((input('escriba el numero a saber: ')))
-
 print(f'la suma de la lista es: {sumaLista(l1)}')
 print(f'el promedio de la lista es: {round(promedioLista(l1),2)}')
 print(f'el numero mayor de la lista es: {mayor(l1)}')
@@ -106,10 +98,4 @@ print(f'el orden de la lista acendente es: {ordenasendente(l1,tam)}')
 print(f'el orden de la lista decendente es: {desendente(l1,tam)}')
 print(f'la moda de la lista es: {moda(l1)}')
 print(f'la mediana de la lista es: {mediana(l1)}')
-buscar(l1,num)
-# print(f'e={e}')
-# print(f'p={p}')
-# print(f'c={c}')
-
-
 
