@@ -1,4 +1,4 @@
-#from objetos.persona import persona
+
 from persona import *
 
 ob1=persona('juan', 1031587)

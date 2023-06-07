@@ -1,4 +1,4 @@
-class Empleado:
+class empleado:
     def __into__ (self, nombre, cargo, salario):
         self.__nombre=nombre
         self.__cargo=cargo
@@ -23,15 +23,10 @@ class Empleado:
         if salario>1160000:
             s=salario*19/100
             s=s+salario
-        return s 
+            return s 
         else:
             s=salario*16/100
             s=s+salario
-        return s
+            return s
         
-ob1=Empleado('juan', axu, 1160000)
-print(type (ob1))
-print(ob1.getnombre())
-print(ob1.gecargo())
-print(ob1.getsalario())
-print(f'la hora se lo pagan a :{calculoxhora(salario)}')
+
