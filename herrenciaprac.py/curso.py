@@ -1,4 +1,7 @@
-class curso:
+class Curso:
     def __init__(self,nombre,tipo):
-        self.__nombre = curso 
-        self.__tipo = tipo
+        self.__nombre=nombre
+        self.__tipo=tipo
+
+    def getNombre(self):
+        return self.__nombre
